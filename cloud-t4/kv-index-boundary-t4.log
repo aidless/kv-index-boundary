@@ -1,0 +1,218 @@
+[{"stream_name":"stdout","time":1.671145987,"data":"\n"}
+,{"stream_name":"stdout","time":1.671187967,"data":"$ /usr/bin/python3 bench.py --selftest\n"}
+,{"stream_name":"stdout","time":9.879439265,"data":"device: Tesla T4, 假设峰值带宽 300 GB/s\n"}
+,{"stream_name":"stdout","time":9.879510198,"data":"[selftest] PASS：k=N 还原 dense，最大差 3.05e-05\n"}
+,{"stream_name":"stdout","time":9.879519646,"data":"[selftest] PASS：k=512 时输出偏离 dense（差 1.67e-01），稀疏路径真实生效\n"}
+,{"stream_name":"stdout","time":12.543405872,"data":"\n"}
+,{"stream_name":"stdout","time":12.54346497,"data":"$ /usr/bin/python3 bench.py --smoke --out smoke.csv\n"}
+,{"stream_name":"stdout","time":34.923689205,"data":"device: Tesla T4, 假设峰值带宽 300 GB/s\n"}
+,{"stream_name":"stdout","time":34.923733768,"data":"B= 1 N=  4096 k= 512  dense=   0.116ms sparse=   0.236ms  实测比 2.038 预测 0.347  dense_bw=20GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.923737793,"data":"B= 1 N=  4096 k=2048  dense=   0.116ms sparse=   0.233ms  实测比 2.015 预测 0.722  dense_bw=20GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.923740687,"data":"B= 1 N= 16384 k= 512  dense=   0.174ms sparse=   0.357ms  实测比 2.050 预测 0.253  dense_bw=54GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.923743679,"data":"B= 1 N= 16384 k=2048  dense=   0.174ms sparse=   0.413ms  实测比 2.370 预测 0.347  dense_bw=54GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.92374633,"data":"B= 1 N= 65536 k= 512  dense=   0.692ms sparse=   0.310ms  实测比 0.448 预测 0.230  dense_bw=55GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.923748916,"data":"B= 1 N= 65536 k=2048  dense=   0.692ms sparse=   0.360ms  实测比 0.521 预测 0.253  dense_bw=55GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.92375146,"data":"B= 8 N=  4096 k= 512  dense=   0.267ms sparse=   0.382ms  实测比 1.430 预测 0.347  dense_bw=71GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.923754005,"data":"B= 8 N=  4096 k=2048  dense=   0.267ms sparse=   0.762ms  实测比 2.849 预测 0.722  dense_bw=71GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.923756647,"data":"B= 8 N= 16384 k= 512  dense=   0.866ms sparse=   0.727ms  实测比 0.840 预测 0.253  dense_bw=87GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.923759196,"data":"B= 8 N= 16384 k=2048  dense=   0.866ms sparse=   1.118ms  实测比 1.290 预测 0.347  dense_bw=87GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":34.923761771,"data":"B= 8 N= 65536 k= 512  dense=   3.294ms sparse=   1.343ms  实测比 0.408 预测 0.230  dense_bw=92GB/s\n"}
+,{"stream_name":"stdout","time":34.923764364,"data":"B= 8 N= 65536 k=2048  dense=   3.294ms sparse=   1.730ms  实测比 0.525 预测 0.253  dense_bw=92GB/s\n"}
+,{"stream_name":"stdout","time":34.923766948,"data":"done -\u003e smoke.csv\n"}
+,{"stream_name":"stdout","time":35.476433251,"data":"\n"}
+,{"stream_name":"stdout","time":35.476468966,"data":"$ /usr/bin/python3 bench.py --iters 50\n"}
+,{"stream_name":"stdout","time":310.307778977,"data":"device: Tesla T4, 假设峰值带宽 300 GB/s\n"}
+,{"stream_name":"stdout","time":310.307823385,"data":"B= 1 N=  4096 k= 512  dense=   0.102ms sparse=   0.215ms  实测比 2.107 预测 0.347  dense_bw=23GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307828303,"data":"B= 1 N=  4096 k=1024  dense=   0.102ms sparse=   0.219ms  实测比 2.149 预测 0.472  dense_bw=23GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307846799,"data":"B= 1 N=  4096 k=2048  dense=   0.102ms sparse=   0.250ms  实测比 2.449 预测 0.722  dense_bw=23GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307849901,"data":"B= 1 N=  8192 k= 512  dense=   0.119ms sparse=   0.239ms  实测比 2.000 预测 0.285  dense_bw=40GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307852573,"data":"B= 1 N=  8192 k=1024  dense=   0.119ms sparse=   0.274ms  实测比 2.300 预测 0.347  dense_bw=40GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307855225,"data":"B= 1 N=  8192 k=2048  dense=   0.119ms sparse=   0.317ms  实测比 2.657 预测 0.472  dense_bw=40GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307857775,"data":"B= 1 N= 16384 k= 512  dense=   0.174ms sparse=   0.355ms  实测比 2.043 预测 0.253  dense_bw=54GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307860334,"data":"B= 1 N= 16384 k=1024  dense=   0.174ms sparse=   0.395ms  实测比 2.270 预测 0.285  dense_bw=54GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307862862,"data":"B= 1 N= 16384 k=2048  dense=   0.174ms sparse=   0.412ms  实测比 2.368 预测 0.347  dense_bw=54GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307865542,"data":"B= 1 N= 32768 k= 512  dense=   0.365ms sparse=   0.272ms  实测比 0.747 预测 0.238  dense_bw=52GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307868099,"data":"B= 1 N= 32768 k=1024  dense=   0.365ms sparse=   0.289ms  实测比 0.792 预测 0.253  dense_bw=52GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307870639,"data":"B= 1 N= 32768 k=2048  dense=   0.365ms sparse=   0.317ms  实测比 0.870 预测 0.285  dense_bw=52GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307873195,"data":"B= 1 N= 65536 k= 512  dense=   0.684ms sparse=   0.311ms  实测比 0.455 预测 0.230  dense_bw=55GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307877019,"data":"B= 1 N= 65536 k=1024  dense=   0.684ms sparse=   0.325ms  实测比 0.475 预测 0.238  dense_bw=55GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307879851,"data":"B= 1 N= 65536 k=2048  dense=   0.684ms sparse=   0.357ms  实测比 0.522 预测 0.253  dense_bw=55GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307882543,"data":"B= 1 N=131072 k= 512  dense=   1.777ms sparse=   0.348ms  实测比 0.196 预测 0.226  dense_bw=42GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307885063,"data":"B= 1 N=131072 k=1024  dense=   1.777ms sparse=   0.354ms  实测比 0.199 预测 0.230  dense_bw=42GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307887686,"data":"B= 1 N=131072 k=2048  dense=   1.777ms sparse=   0.384ms  实测比 0.216 预测 0.238  dense_bw=42GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307890213,"data":"B= 8 N=  4096 k= 512  dense=   0.235ms sparse=   0.299ms  实测比 1.271 预测 0.347  dense_bw=80GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307892747,"data":"B= 8 N=  4096 k=1024  dense=   0.235ms sparse=   0.406ms  实测比 1.723 预测 0.472  dense_bw=80GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307898309,"data":"B= 8 N=  4096 k=2048  dense=   0.235ms sparse=   0.610ms  实测比 2.593 预测 0.722  dense_bw=80GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307901081,"data":"B= 8 N=  8192 k= 512  dense=   0.406ms sparse=   0.346ms  实测比 0.853 预测 0.285  dense_bw=93GB/s\n"}
+,{"stream_name":"stdout","time":310.307903529,"data":"B= 8 N=  8192 k=1024  dense=   0.406ms sparse=   0.452ms  实测比 1.114 预测 0.347  dense_bw=93GB/s\n"}
+,{"stream_name":"stdout","time":310.307906059,"data":"B= 8 N=  8192 k=2048  dense=   0.406ms sparse=   0.647ms  实测比 1.596 预测 0.472  dense_bw=93GB/s\n"}
+,{"stream_name":"stdout","time":310.307908508,"data":"B= 8 N= 16384 k= 512  dense=   0.876ms sparse=   0.731ms  实测比 0.834 预测 0.253  dense_bw=86GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307911069,"data":"B= 8 N= 16384 k=1024  dense=   0.876ms sparse=   0.850ms  实测比 0.970 预测 0.285  dense_bw=86GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307913633,"data":"B= 8 N= 16384 k=2048  dense=   0.876ms sparse=   0.739ms  实测比 0.843 预测 0.347  dense_bw=86GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307916247,"data":"B= 8 N= 32768 k= 512  dense=   1.672ms sparse=   0.838ms  实测比 0.501 预测 0.238  dense_bw=90GB/s\n"}
+,{"stream_name":"stdout","time":310.307918684,"data":"B= 8 N= 32768 k=1024  dense=   1.672ms sparse=   0.971ms  实测比 0.580 预测 0.253  dense_bw=90GB/s\n"}
+,{"stream_name":"stdout","time":310.307921408,"data":"B= 8 N= 32768 k=2048  dense=   1.672ms sparse=   0.801ms  实测比 0.479 预测 0.285  dense_bw=90GB/s\n"}
+,{"stream_name":"stdout","time":310.307923905,"data":"B= 8 N= 65536 k= 512  dense=   3.282ms sparse=   0.879ms  实测比 0.268 预测 0.230  dense_bw=92GB/s\n"}
+,{"stream_name":"stdout","time":310.307926433,"data":"B= 8 N= 65536 k=1024  dense=   3.282ms sparse=   0.969ms  实测比 0.295 预测 0.238  dense_bw=92GB/s\n"}
+,{"stream_name":"stdout","time":310.307928869,"data":"B= 8 N= 65536 k=2048  dense=   3.282ms sparse=   0.919ms  实测比 0.280 预测 0.253  dense_bw=92GB/s\n"}
+,{"stream_name":"stdout","time":310.307931273,"data":"B= 8 N=131072 k= 512  dense=   6.360ms sparse=   1.299ms  实测比 0.204 预测 0.226  dense_bw=95GB/s\n"}
+,{"stream_name":"stdout","time":310.307933691,"data":"B= 8 N=131072 k=1024  dense=   6.360ms sparse=   1.255ms  实测比 0.197 预测 0.230  dense_bw=95GB/s\n"}
+,{"stream_name":"stdout","time":310.307936151,"data":"B= 8 N=131072 k=2048  dense=   6.360ms sparse=   1.431ms  实测比 0.225 预测 0.238  dense_bw=95GB/s\n"}
+,{"stream_name":"stdout","time":310.307938571,"data":"B=32 N=  4096 k= 512  dense=   0.849ms sparse=   0.919ms  实测比 1.082 预测 0.347  dense_bw=89GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307941143,"data":"B=32 N=  4096 k=1024  dense=   0.849ms sparse=   1.049ms  实测比 1.235 预测 0.472  dense_bw=89GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307943729,"data":"B=32 N=  4096 k=2048  dense=   0.849ms sparse=   1.786ms  实测比 2.104 预测 0.722  dense_bw=89GB/s  [!] 带宽利用率\u003c30%，读数可疑\n"}
+,{"stream_name":"stdout","time":310.307946277,"data":"B=32 N=  8192 k= 512  dense=   1.639ms sparse=   0.909ms  实测比 0.555 预测 0.285  dense_bw=92GB/s\n"}
+,{"stream_name":"stdout","time":310.307948704,"data":"B=32 N=  8192 k=1024  dense=   1.639ms sparse=   1.296ms  实测比 0.791 预测 0.347  dense_bw=92GB/s\n"}
+,{"stream_name":"stdout","time":310.307951145,"data":"B=32 N=  8192 k=2048  dense=   1.639ms sparse=   2.073ms  实测比 1.265 预测 0.472  dense_bw=92GB/s\n"}
+,{"stream_name":"stdout","time":310.307955873,"data":"B=32 N= 16384 k= 512  dense=   3.217ms sparse=   1.173ms  实测比 0.365 预测 0.253  dense_bw=94GB/s\n"}
+,{"stream_name":"stdout","time":310.307958504,"data":"B=32 N= 16384 k=1024  dense=   3.217ms sparse=   1.289ms  实测比 0.401 预测 0.285  dense_bw=94GB/s\n"}
+,{"stream_name":"stdout","time":310.3079609,"data":"B=32 N= 16384 k=2048  dense=   3.217ms sparse=   2.001ms  实测比 0.622 预测 0.347  dense_bw=94GB/s\n"}
+,{"stream_name":"stdout","time":310.307963327,"data":"B=32 N= 32768 k= 512  dense=   6.021ms sparse=   1.538ms  实测比 0.255 预测 0.238  dense_bw=100GB/s\n"}
+,{"stream_name":"stdout","time":310.30796578,"data":"B=32 N= 32768 k=1024  dense=   6.021ms sparse=   1.822ms  实测比 0.303 预测 0.253  dense_bw=100GB/s\n"}
+,{"stream_name":"stdout","time":310.307968237,"data":"B=32 N= 32768 k=2048  dense=   6.021ms sparse=   2.562ms  实测比 0.426 预测 0.285  dense_bw=100GB/s\n"}
+,{"stream_name":"stdout","time":310.307971015,"data":"B=32 N= 65536 k= 512  dense=  12.142ms sparse=   2.499ms  实测比 0.206 预测 0.230  dense_bw=99GB/s\n"}
+,{"stream_name":"stdout","time":310.307973556,"data":"B=32 N= 65536 k=1024  dense=  12.142ms sparse=   2.889ms  实测比 0.238 预测 0.238  dense_bw=99GB/s\n"}
+,{"stream_name":"stdout","time":310.307976019,"data":"B=32 N= 65536 k=2048  dense=  12.142ms sparse=   3.627ms  实测比 0.299 预测 0.253  dense_bw=99GB/s\n"}
+,{"stream_name":"stdout","time":310.307978431,"data":"B=32 N=131072 k= 512  dense=  25.763ms sparse=   4.672ms  实测比 0.181 预测 0.226  dense_bw=94GB/s\n"}
+,{"stream_name":"stdout","time":310.307980841,"data":"B=32 N=131072 k=1024  dense=  25.763ms sparse=   5.046ms  实测比 0.196 预测 0.230  dense_bw=94GB/s\n"}
+,{"stream_name":"stdout","time":310.307983293,"data":"B=32 N=131072 k=2048  dense=  25.763ms sparse=   5.857ms  实测比 0.227 预测 0.238  dense_bw=94GB/s\n"}
+,{"stream_name":"stdout","time":310.307985713,"data":"done -\u003e results.csv\n"}
+,{"stream_name":"stdout","time":310.812556198,"data":"\n"}
+,{"stream_name":"stdout","time":310.812588401,"data":"$ /usr/bin/python3 analyze.py results.csv --plot /kaggle/working/figures\n"}
+,{"stream_name":"stderr","time":311.863144757,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 38271 (\\N{CJK UNIFIED IDEOGRAPH-957F}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.863182725,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.86333284,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 24230 (\\N{CJK UNIFIED IDEOGRAPH-5EA6}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.863350725,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.863604535,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 65288 (\\N{FULLWIDTH LEFT PARENTHESIS}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.863620008,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.863808765,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 31446 (\\N{CJK UNIFIED IDEOGRAPH-7AD6}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.863816199,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.864012304,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 34394 (\\N{CJK UNIFIED IDEOGRAPH-865A}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.864019965,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.86421779,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 32447 (\\N{CJK UNIFIED IDEOGRAPH-7EBF}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.864226088,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.864534557,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 29702 (\\N{CJK UNIFIED IDEOGRAPH-7406}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.864547143,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.864787582,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 35770 (\\N{CJK UNIFIED IDEOGRAPH-8BBA}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.864795294,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.864980331,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 20020 (\\N{CJK UNIFIED IDEOGRAPH-4E34}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.864987813,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.865158231,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 30028 (\\N{CJK UNIFIED IDEOGRAPH-754C}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.865165447,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.865635495,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 65289 (\\N{FULLWIDTH RIGHT PARENTHESIS}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.865646485,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.878801186,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 26102 (\\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.878822192,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.87901076,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 38388 (\\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.879020218,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.87921236,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 27604 (\\N{CJK UNIFIED IDEOGRAPH-6BD4}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.879220539,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.880109428,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 31232 (\\N{CJK UNIFIED IDEOGRAPH-7A00}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.880122331,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.880294932,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 30095 (\\N{CJK UNIFIED IDEOGRAPH-758F}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.880301622,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.880499234,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 26356 (\\N{CJK UNIFIED IDEOGRAPH-66F4}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.880509451,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.880680382,"data":"/kaggle/working/analyze.py:112: UserWarning: Glyph 24555 (\\N{CJK UNIFIED IDEOGRAPH-5FEB}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.880687017,"data":"  fig.tight_layout()\n"}
+,{"stream_name":"stderr","time":311.909477891,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 26102 (\\N{CJK UNIFIED IDEOGRAPH-65F6}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.909519468,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.909665412,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 38388 (\\N{CJK UNIFIED IDEOGRAPH-95F4}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.909675107,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.909881701,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 27604 (\\N{CJK UNIFIED IDEOGRAPH-6BD4}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.909901771,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.910476888,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 65288 (\\N{FULLWIDTH LEFT PARENTHESIS}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.910497072,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.910756525,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 31232 (\\N{CJK UNIFIED IDEOGRAPH-7A00}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.910767111,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.910916517,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 30095 (\\N{CJK UNIFIED IDEOGRAPH-758F}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.910922952,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.911066609,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 26356 (\\N{CJK UNIFIED IDEOGRAPH-66F4}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.911072505,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.911196208,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 24555 (\\N{CJK UNIFIED IDEOGRAPH-5FEB}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.911202707,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.911365695,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 65289 (\\N{FULLWIDTH RIGHT PARENTHESIS}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.911371698,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.936829813,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 38271 (\\N{CJK UNIFIED IDEOGRAPH-957F}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.936846882,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.936851871,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 24230 (\\N{CJK UNIFIED IDEOGRAPH-5EA6}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.936856133,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.937180674,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 31446 (\\N{CJK UNIFIED IDEOGRAPH-7AD6}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.937188539,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.937330599,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 34394 (\\N{CJK UNIFIED IDEOGRAPH-865A}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.937345257,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.937475242,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 32447 (\\N{CJK UNIFIED IDEOGRAPH-7EBF}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.937505995,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.937737514,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 29702 (\\N{CJK UNIFIED IDEOGRAPH-7406}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.937747181,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.937858984,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 35770 (\\N{CJK UNIFIED IDEOGRAPH-8BBA}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.93786833,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.938013952,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 20020 (\\N{CJK UNIFIED IDEOGRAPH-4E34}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.938024325,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stderr","time":311.93818692,"data":"/kaggle/working/analyze.py:114: UserWarning: Glyph 30028 (\\N{CJK UNIFIED IDEOGRAPH-754C}) missing from font(s) DejaVu Sans.\n"}
+,{"stream_name":"stderr","time":311.938196769,"data":"  fig.savefig(path, dpi=150)\n"}
+,{"stream_name":"stdout","time":312.695038096,"data":"\n"}
+,{"stream_name":"stdout","time":312.695069958,"data":"== 带宽 sanity（\u003c30% 峰值的行数）==\n"}
+,{"stream_name":"stdout","time":312.695075156,"data":"共 54 行，可疑 27 行\n"}
+,{"stream_name":"stdout","time":312.695077969,"data":"  B=1 N=4096 k=512 dense_bw=23GB/s\n"}
+,{"stream_name":"stdout","time":312.695080625,"data":"  B=1 N=4096 k=1024 dense_bw=23GB/s\n"}
+,{"stream_name":"stdout","time":312.69508413,"data":"  B=1 N=4096 k=2048 dense_bw=23GB/s\n"}
+,{"stream_name":"stdout","time":312.695116649,"data":"  B=1 N=8192 k=512 dense_bw=40GB/s\n"}
+,{"stream_name":"stdout","time":312.695120922,"data":"  B=1 N=8192 k=1024 dense_bw=40GB/s\n"}
+,{"stream_name":"stdout","time":312.695125365,"data":"  B=1 N=8192 k=2048 dense_bw=40GB/s\n"}
+,{"stream_name":"stdout","time":312.695129667,"data":"  B=1 N=16384 k=512 dense_bw=54GB/s\n"}
+,{"stream_name":"stdout","time":312.695134155,"data":"  B=1 N=16384 k=1024 dense_bw=54GB/s\n"}
+,{"stream_name":"stdout","time":312.695138912,"data":"  B=1 N=16384 k=2048 dense_bw=54GB/s\n"}
+,{"stream_name":"stdout","time":312.695142895,"data":"  B=1 N=32768 k=512 dense_bw=52GB/s\n"}
+,{"stream_name":"stdout","time":312.6951467,"data":"\n"}
+,{"stream_name":"stdout","time":312.695150283,"data":"== P1：大 N 比值收敛（N\u003e=65536 的行）==\n"}
+,{"stream_name":"stdout","time":312.695154327,"data":"     k   B       N     实测比     预测比\n"}
+,{"stream_name":"stdout","time":312.695158155,"data":"   512   1   65536   0.455   0.230  [!]\n"}
+,{"stream_name":"stdout","time":312.69516185,"data":"   512   1  131072   0.196   0.226\n"}
+,{"stream_name":"stdout","time":312.695167475,"data":"   512   8   65536   0.268   0.230\n"}
+,{"stream_name":"stdout","time":312.695175417,"data":"   512   8  131072   0.204   0.226\n"}
+,{"stream_name":"stdout","time":312.695178047,"data":"   512  32   65536   0.206   0.230\n"}
+,{"stream_name":"stdout","time":312.695180475,"data":"   512  32  131072   0.181   0.226\n"}
+,{"stream_name":"stdout","time":312.695182907,"data":"  1024   1   65536   0.475   0.238  [!]\n"}
+,{"stream_name":"stdout","time":312.695185381,"data":"  1024   1  131072   0.199   0.230\n"}
+,{"stream_name":"stdout","time":312.695187933,"data":"  1024   8   65536   0.295   0.238  [!]\n"}
+,{"stream_name":"stdout","time":312.695190386,"data":"  1024   8  131072   0.197   0.230\n"}
+,{"stream_name":"stdout","time":312.695192812,"data":"  1024  32   65536   0.238   0.238\n"}
+,{"stream_name":"stdout","time":312.695195271,"data":"  1024  32  131072   0.196   0.230\n"}
+,{"stream_name":"stdout","time":312.695197762,"data":"  2048   1   65536   0.522   0.254  [!]\n"}
+,{"stream_name":"stdout","time":312.695200216,"data":"  2048   1  131072   0.216   0.238\n"}
+,{"stream_name":"stdout","time":312.69520326,"data":"  2048   8   65536   0.280   0.254\n"}
+,{"stream_name":"stdout","time":312.695221365,"data":"  2048   8  131072   0.225   0.238\n"}
+,{"stream_name":"stdout","time":312.695225968,"data":"  2048  32   65536   0.299   0.254\n"}
+,{"stream_name":"stdout","time":312.695230293,"data":"  2048  32  131072   0.227   0.238\n"}
+,{"stream_name":"stdout","time":312.69524583,"data":"\n"}
+,{"stream_name":"stdout","time":312.695249737,"data":"== 临界点：sparse 何时反超 dense（仅带宽有效行）==\n"}
+,{"stream_name":"stdout","time":312.69525372,"data":"     k   B     实测N*     理论N*     偏差\n"}
+,{"stream_name":"stdout","time":312.695257481,"data":"   512   8 8192       658  12.44x\n"}
+,{"stream_name":"stdout","time":312.695261127,"data":"   512  32 8192       658  12.44x\n"}
+,{"stream_name":"stdout","time":312.695264687,"data":"  1024   8 32768      1317  24.89x\n"}
+,{"stream_name":"stdout","time":312.695268407,"data":"  1024  32 8192      1317   6.22x\n"}
+,{"stream_name":"stdout","time":312.695271971,"data":"  2048   8 32768      2633  12.44x\n"}
+,{"stream_name":"stdout","time":312.695275625,"data":"  2048  32 16384      2633   6.22x\n"}
+,{"stream_name":"stdout","time":312.695279276,"data":"\n"}
+,{"stream_name":"stdout","time":312.695282925,"data":"== 权重 vs KV 带宽交叉点（L=60，d=576B/层）==\n"}
+,{"stream_name":"stdout","time":312.695292959,"data":"每步 KV 读取 = B × L × d × N；超过权重读取 W 时 KV 成为瓶颈\n"}
+,{"stream_name":"stdout","time":312.695296097,"data":"       W        N     B*\n"}
+,{"stream_name":"stdout","time":312.695298522,"data":"     50G    32768   44.2\n"}
+,{"stream_name":"stdout","time":312.695300977,"data":"     50G   131072   11.0\n"}
+,{"stream_name":"stdout","time":312.695303861,"data":"     50G  1048576    1.4\n"}
+,{"stream_name":"stdout","time":312.695320407,"data":"    100G    32768   88.3\n"}
+,{"stream_name":"stdout","time":312.695324492,"data":"    100G   131072   22.1\n"}
+,{"stream_name":"stdout","time":312.695328853,"data":"    100G  1048576    2.8\n"}
+,{"stream_name":"stdout","time":312.695332697,"data":"图 -\u003e /kaggle/working/figures/boundary_B1.png\n"}
+,{"stream_name":"stdout","time":312.695346552,"data":"图 -\u003e /kaggle/working/figures/boundary_B8.png\n"}
+,{"stream_name":"stdout","time":312.69535065,"data":"图 -\u003e /kaggle/working/figures/boundary_B32.png\n"}
+,{"stream_name":"stdout","time":312.793547382,"data":"\n"}
+,{"stream_name":"stdout","time":312.79359334,"data":"产物：/kaggle/working/ 下的 results.csv, smoke.csv, figures/\n"}
+,{"stream_name":"stderr","time":314.920898543,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":314.920926931,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":315.173819428,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":315.173843798,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":315.979879001,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":316.94295487,"data":"[NbConvertApp] Writing 279285 bytes to __results__.html\n"}
+]

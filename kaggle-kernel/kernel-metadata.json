@@ -1,0 +1,13 @@
+{
+  "id": "liuzewen123/kv-index-boundary-t4",
+  "title": "kv-index-boundary-t4",
+  "code_file": "run_boundary.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": ["liuzewen123/kv-index-boundary"],
+  "competition_sources": [],
+  "kernel_sources": []
+}
