@@ -3,7 +3,6 @@
 # dataset 挂载可能比 kernel 启动慢，递归查找 + 重试
 
 import glob
-import os
 import shutil
 import subprocess
 import sys
